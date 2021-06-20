@@ -19,16 +19,17 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    font-family: Inter, serif;
+    font-family: MADE Outer Sans, serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: normal;
+    font-size: 1rem;
     line-height: 24px;
     color: #FFFFFF;
 }
 .menu div{
     margin: 0 1vw;
     cursor: pointer;
+    text-transform: uppercase;
 }
 .start_now {
     display: flex;
@@ -44,7 +45,7 @@
     cursor: pointer;
 }
 .text {
-    font-family: Inter,serif;
+    font-family: MADE Outer Sans, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -96,9 +97,9 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    font-family: Inter, serif;
+    font-family: MADE Outer Sans, serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
@@ -173,5 +174,6 @@
     .nav_items_active div{
         padding: 15px 20px;
         background-color: #6145A7;
+        text-transform: uppercase;
     }
 }

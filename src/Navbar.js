@@ -12,9 +12,9 @@ export default function Navbar({clickhandler}) {
         <div className={styles.container}>
             <div className={styles.logo}>String Ventures</div>
             <div className={styles.menu}>
-                <div onClick={() => {}}>Team</div>
+                {/*<div onClick={() => {}}>Team</div>*/}
+                <div>STUDIO</div>
                 <div>Portfolio</div>
-                <div>About us</div>
                 <div>Resources</div>
             </div>
             <div className={styles.start_now} onClick={clickhandler}>
@@ -33,9 +33,9 @@ export default function Navbar({clickhandler}) {
             <div
                 className={nav == true ? styles.nav_items_active : styles.nav_items_mobile}
             >
-                <div onClick={() => {}}>Team</div>
+                {/*<div onClick={() => {}}>Team</div>*/}
+                <div>STUDIO</div>
                 <div>Portfolio</div>
-                <div>About us</div>
                 <div>Resources</div>
                 <div className={styles.mobil} onClick={clickhandler}>
                     <div className={styles.text} >
