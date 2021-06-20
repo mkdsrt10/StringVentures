@@ -13,55 +13,104 @@
 }
 .top_contianer {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
-  background-image: url(/background_hero.png);
+  justify-content: center;
+  align-items: center;
+  background-image: url(/landing.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: scroll;
+  background-position: bottom;
 }
 .top_contianer_content {
   flex: 1;
   display: flex;
-  flex-direction: row;
-  background-image: url(/img.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 50vw;
-  margin-right: 2vw;
-  background-attachment: scroll;
+  flex-direction: column;
+  margin: 10vh auto;
+  justify-content: flex-start;
+  align-items: center;
 }
-.top_contianer_content_title {
-  margin-left: 5vw;
-  margin-top: 20vh;
-  flex: 1;
-  max-width: 40vw;
-}
-
 .hero_heading {
-  font-family: Inter, serif;
+  font-family: MADE Outer Sans, serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 55px;
+  font-weight: 900;
+  font-size: 4rem;
   line-height: 67px;
-  letter-spacing: -0.02em;
-
+  letter-spacing: 0.03em;
+  max-width: 70vw;
+  text-align: center;
   color: #FFFFFF;
+  margin-top: 1rem;
+  text-transform: uppercase;
 }
-
 .hero_subhead{
-  font-family: Inter, serif;
+  background-color: #6145A7;
+  margin: 1rem auto;
+  padding: .2rem 1rem;
+  font-family: MADE Outer Sans, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 204%;
-  /* or 33px */
-
-
+  line-height: 150%;
+  letter-spacing: 0.5px;
   color: #FFFFFF;
 }
 
+.question {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 1vh 2rem;
+  justify-content: flex-start;
+}
+.hero_heading_question {
+  font-family: MADE Outer Sans, serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: 0.03em;
+  max-width: 70vw;
+  color: #0A0C3B;
+  text-transform: uppercase;
+}
+.hero_heading_question span{
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #0A0C3B;
+  /*text-outline: 1px solid #0A0C3B;*/
+}
+.hero_subhead_question{
+  background-color: #6145A7;
+  margin: 1rem 0;
+  max-width: max-content;
+  padding: .2rem 1rem;
+  font-family: MADE Outer Sans, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+.partner_button{
+  background-color: #6145A7;
+  margin: 2rem 0;
+  max-width: max-content;
+  padding: .6rem 1.5rem;
+  font-family: MADE Outer Sans, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.partner_button:hover{
+  box-shadow: 10px 25px 100px rgba(69, 88, 157, 0.08);
+}
 .start_now {
   display: flex;
   flex-direction: row;
@@ -83,12 +132,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
-  /* identical to box height */
-
   color: #ffffff;
-
-  /* Inside Auto Layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -104,40 +148,23 @@
   }
   .top_contianer_content{
     flex-direction: column-reverse;
-    background-image: none;
-  }
-  .top_contianer_image {
-    display: flex;
-    min-height: 40vh;
-    margin: auto 8vw;
-    background-image: url(/img.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-attachment: scroll;
+    justify-content: flex-end;
+    margin-top: 2rem;
   }
   .hero_heading {
-    font-family: Inter, serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.9rem;
-    margin-bottom: 1rem;
-    line-height: 40px;
+    font-size: 3rem;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+    line-height: 3.1rem;
+    text-align: left;
+    margin: 2rem 1rem;
+    max-width: 100%;
   }
   .hero_subhead{
-    font-family: Inter, serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 154%;
     color: #FFFFFF;
-  }
-  .top_contianer_content_title {
-    margin: auto;
-    margin-top: 0rem;
-    max-width: 84vw;
+    margin: 1rem 1rem;
+    max-width: 100%;
+    text-align: center;
   }
   .start_now {
     display: flex;
@@ -154,18 +181,5 @@
   .text{
     font-size: 1.1rem;
     line-height: 1.2rem;
-  }
-  .join_hand{
-    height: 60vh;
-  }
-  .join_hand_text{
-    padding: 0rem 3rem;
-    font-size: 28px;
-    line-height: 135%;
-    margin: 0rem 0rem 0rem;
-
-    letter-spacing: -0.015em;
-
-    color: #182a43;
   }
 }

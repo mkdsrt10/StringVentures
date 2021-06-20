@@ -19,19 +19,15 @@
   justify-content: center;
   overflow: scroll;
   flex-direction: row;
+  margin-top: 2rem;
 }
-.Resources_content_left_title {
-  font-family: Inter, serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 40px;
-  /* identical to box height, or 222% */
-
-  letter-spacing: 3px;
-  text-transform: uppercase;
-
-  color: #32B260;
+.Resources_container_resource{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 15px 15px;
+  height: max-content;
+  overflow: hidden;
 }
 .Resources_content_left_title {
   font-family: Inter, serif;
@@ -39,131 +35,49 @@
   font-weight: 600;
   font-size: 44px;
   line-height: 60px;
-  /* or 136% */
-
   letter-spacing: -1.5px;
-
   color: #0F2137;
-
 }
 .Resources_content_left_subtitle{
   font-family: Inter, serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 16px;
-  line-height: 30px;
-  /* or 187% */
-
-  text-align: center;
-
-  color: #343D48;
-
-  opacity: 0.7;
-}
-.Resources_content_right {
-  flex: 1;
-  min-height: 600px;
-  background-image: url(/home_impact_image.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-attachment: scroll;
-}
-.Resources_cotent_grid {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.Resources_Quote{
-  display: flex;
-  min-height: 40vh;
-  justify-content: center;
-  align-items: center;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 65px;
-  text-align: center;
-
+  line-height: 20px;
   color: #0F2137;
+  opacity: 0.9;
 }
-.Resources_People{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.Resources_people_card{
-  display: flex;
-  flex-direction: row;
-  height: 120px;
-  align-items: center;
-  padding: 25px 40px;
-}
-.Resources_people_card:hover{
-  cursor: pointer;
-}
-.Resources_people_card img{
-  display: flex;
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-}
-.Resources_people_card_name{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto 1vw;
-}
-.Resources_people_card_name_name{
+.Resources_content_date{
+  margin: 15px 0 0;
   font-family: Inter, serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #343D48;
+  opacity: 0.7;
+}
+.Resources_content_title{
+  font-family: DM Sans, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
   line-height: 30px;
+  margin: 15px 0;
   color: #0F2137;
 }
-.Resources_people_card_name_subname{
-    font-family: Inter, serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 28px;
-    color: #343D48;
-    opacity: 0.8;
-}
-.Resources_content_right_mobile {
-  display: none;
-}
 @media all and (max-width: 1000px) {
-  .Resources_cotent_conainer {
-    flex-direction: column-reverse;
+  .Resources_container {
+    margin: 4rem 2rem;
+    height: auto;
   }
-.Resources_container {
-  margin: 4rem 2rem;
-  height: auto;
-}
-.Resources_cotent_conainer {
-  width: 100%;
-  margin: 0rem auto auto;
-}
-.Resources_content_right{
-  display: none;
-}
-  .Resources_content_right_mobile {
-    display: block;
-    height: 500px;
-    Margin: 0rem -1rem 0rem -2rem;
-    background-image: url(/home_impact_image.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-attachment: scroll;
+  .Resources_cotent_conainer {
+    width: 100%;
+    margin: 0rem auto auto;
   }
 }
 @media all and (max-width: 600px) {
   .Resources_content_left_subtitle {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 2rem;
@@ -171,15 +85,5 @@
     letter-spacing: -0.015em;
     /* #272727 */
     color: #182a43;
-  }
-  .Resources_cotent_grid {
-    margin: 1rem -2rem 0rem;
-    Flex: 1;
-    Justify-content: center;
-    background-image: url(/missin.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: scroll;
   }
 }

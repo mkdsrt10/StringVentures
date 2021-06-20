@@ -1,119 +1,213 @@
 .Impact_container {
-  margin: 4rem 2rem;
-  height: auto;
+  background-image: url("/paper.png");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 8rem 2rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 70vh;
+  flex-direction: column;
+  background-color: #180A3B;
 }
 .Impact_cotent_conainer {
-  width: 90%;
-  margin: 2rem auto 2rem auto;
   display: flex;
   flex-direction: row;
+  margin: 2rem 0;
 }
-.Impact_content_left {
+.top_contianer_content {
   flex: 1;
-  margin: 2rem auto 2rem auto;
-}
-.Impact_content_left_title {
-  font-family: Inter, serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 40px;
-  /* identical to box height, or 222% */
-
-  letter-spacing: 3px;
-  text-transform: uppercase;
-
-  color: #32B260;
-}
-.Impact_content_left_subtitle {
-  font-family: Inter, serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 44px;
-  line-height: 60px;
-  /* or 136% */
-
-  letter-spacing: -1.5px;
-
-  color: #0F2137;
-
-}
-.Impact_content_right {
-  flex: 1;
-  min-height: 400px;
-  background-image: url(/customer.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-attachment: scroll;
-}
-.Impact_cotent_grid {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  margin-top: 2rem;
-  font-family: Inter, serif;
+  flex-direction: column;
+  margin: 10vh auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hero_heading {
+  font-family: MADE Outer Sans, serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 204%;
-  /* or 37px */
-
-
-  color: #616591;
-
+  font-size: 2rem;
+  letter-spacing: 0.03em;
+  max-width: 70vw;
+  text-align: center;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
-.Impact_content_right_mobile {
-  display: none;
-}
-@media all and (max-width: 1000px) {
-  .Impact_cotent_conainer {
-    flex-direction: column-reverse;
-  }
-.Impact_container {
-  margin: 2rem 2rem;
-  height: auto;
-}
-.Impact_cotent_conainer {
+.hero_heading span{
+  color: #FFFFFF;
+  font-size: 3rem;
+  font-weight: 900;
   width: 100%;
-  margin: 0rem auto auto;
+  line-height: 5rem;
 }
-.Impact_content_right{
-  display: none;
+.hero_subhead{
+  background-color: #6145A7;
+  margin: 1rem auto;
+  padding: .2rem 2rem;
+  font-family: MADE Outer Sans, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
 }
-  .Impact_content_right_mobile {
-    display: block;
-    height: 500px;
-    Margin: 0rem -1rem 0rem -2rem;
-    background-image: url(/customer.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-attachment: scroll;
+.border{
+  margin: 2rem auto;
+  background-color: #6145A7;
+  padding: 0.2rem;
+  width: 20vw;
+}
+.top_contianer_content p{
+  font-family: MADE Outer Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 204%;
+  text-align: center;
+  color: #D5B8FE;
+  opacity: 0.7;
+  width: 50vw;
+}
+
+
+.workTogether{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex: 1;
+  padding: 2rem 0;
+  width: 100%;
+}
+.text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+.connect{
+  margin-top: 4rem;
+  font-family: MADE Outer Sans, serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3rem;
+  letter-spacing: 0.03em;
+  max-width: 70vw;
+  color: white;
+  text-transform: uppercase;
+}
+.connect span{
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+.partner_button{
+  background-color: #6145A7;
+  margin: 2rem 0;
+  max-width: max-content;
+  padding: .6rem 1.5rem;
+  font-family: MADE Outer Sans, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.partner_button:hover{
+  box-shadow: 10px 25px 100px rgba(69, 88, 157, 0.08);
+}
+.text p{
+  font-family: MADE Outer Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 204%;
+  color: #D5B8FE;
+  opacity: 0.7;
+  width: 50vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .Impact_container {
+    padding: 2rem 2rem 0;
+    align-items: flex-start;
   }
-}
-@media all and (max-width: 600px) {
-  .Impact_content_left_subtitle {
+  .Impact_cotent_conainer {
+    margin: 2rem 0;
+    width: 100%;
+  }
+  .top_contianer_content {
+    margin: 2rem 0;
+    align-items: flex-start;
+  }
+  .hero_heading {
     font-size: 2rem;
+    letter-spacing: 0.03em;
+    max-width: 100%;
+    text-align: left;
+  }
+  .hero_heading span{
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .hero_subhead{
+    margin: 1rem 0;
+  }
+  .border{
+    margin: 2rem 0;
+    background-color: #6145A7;
+    padding: 0.2rem;
+    width: 40vw;
+  }
+  .top_contianer_content p{
+    text-align: left;
+    width: 100%;
+  }
+
+
+  .workTogether{
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 0 2rem;
+    width: 100%;
+  }
+  .text{
+    align-items: flex-start;
+  }
+  .connect{
     margin-top: 2rem;
-    line-height: 39px;
-    letter-spacing: -0.015em;
-    /* #272727 */
-    color: #182a43;
+    font-size: 2rem;
+    max-width: 100%;
+    text-align: center;
   }
-  .Impact_content_left_title{
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: 3px;
+  .partner_button{
+    margin: 2rem 0;
+    font-size: 1rem;
   }
-  .Impact_content_right_mobile {
-    display: block;
-    height: 400px;
+  .partner_button:hover{
+    box-shadow: 10px 25px 100px rgba(69, 88, 157, 0.08);
   }
+  .text p{
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    width: 100%;
+    text-align: center;
+  }
+
 }

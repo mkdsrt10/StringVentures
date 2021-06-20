@@ -1,22 +1,24 @@
 import styles from "../styles/Impact.module.css";
+import Image from "next/image"
+
 const Impact = () => {
     return (
         <div className={styles.Impact_container}>
-            <div className={styles.Impact_cotent_conainer}>
-                <div className={styles.Impact_content_left}>
-                    <div className={styles.Impact_content_left_title}>
-                        Our stories from idea to impact.
-                    </div>
-                    <div className={styles.Impact_content_left_subtitle}>
-                        Startups that got on board.
-                    </div>
-                    <div className={styles.Impact_content_right_mobile}></div>
-                    <div className={styles.Impact_cotent_grid}>
-                        At String Ventures, we are founders and operators first. We work with some of the most intrepid entrepreneurs
-                        to build transformational companies. We engage early at the pre-seed and seed stage in areas of our thematic interest.
-                    </div>
+            <div className={styles.top_contianer_content}>
+                <div className={styles.hero_subhead}>
+                    We’re Making the change
                 </div>
-                <div className={styles.Impact_content_right}></div>
+                <div className={styles.hero_heading}>
+                    Companies that <span>trust us</span>.
+                </div>
+                <div className={styles.image}>
+                    <Image src={"/hi_invest.png"} height={350} width={600}/>
+                </div>
+            </div>
+            <div className={styles.top_contianer_content}>
+                <div className={styles.image}>
+                    <Image src={"/bdr_invest.png"} height={590} width={600}/>
+                </div>
             </div>
         </div>
     );

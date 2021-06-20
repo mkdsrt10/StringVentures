@@ -19,7 +19,7 @@ export default function Navbar({clickhandler}) {
             </div>
             <div className={styles.start_now} onClick={clickhandler}>
                 <div className={styles.text} >
-                    Apply Now
+                    Partner with us
                 </div>
             </div>
             <div
@@ -39,7 +39,7 @@ export default function Navbar({clickhandler}) {
                 <div>Resources</div>
                 <div className={styles.mobil} onClick={clickhandler}>
                     <div className={styles.text} >
-                        Apply Now
+                        Partner with us
                     </div>
                 </div>
             </div>
