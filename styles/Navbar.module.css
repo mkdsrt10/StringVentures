@@ -2,178 +2,37 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 5vh 5vw;
-    background: transparent;
-    width: 90vw;
+    padding: 5vh 8vw;
+    background: #ECEDF1;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
 .logo{
-    font-family: Anton, serif;
+    font-family: Gilroy-Bold, serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    line-height: 35px;
-    color: #FFFFFF;
-}
-.menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    font-family: MADE Outer Sans, serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1rem;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-.menu div{
-    margin: 0 1vw;
-    cursor: pointer;
-    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #0D2573;
 }
 .start_now {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 40px;
-    align-items: center;
-    padding: 15px 10px;
-    background-color: #753FFB;
+    background-color: #F5F5FA;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #FFFFFF;
+    border-radius: 32px;
+    padding: 0.8rem 4rem;
 }
 .start_now:hover{
     background-color:  cornflowerblue;
     cursor: pointer;
 }
 .text {
-    font-family: MADE Outer Sans, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 26px;
-    color: #ffffff;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 10px;
-    text-transform: uppercase;
-}
-.Hamburger {
-    z-index: 10;
-    color: black;
-    flex: 1;
-    position: absolute;
-    display: none;
-    top: 1rem;
-    right: 1rem;
-    cursor: pointer;
-    margin-right: 1rem;
-}
-.bar1,
-.bar2,
-.bar3 {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-.Hamburger_change {
-    display: none;
-}
-.Hamburger_change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-5px, 5px);
-    transform: rotate(-45deg) translate(-5px, 5px);
-}
-.Hamburger_change .bar2 {
-    opacity: 0;
-}
-.Hamburger_change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-
-.nav_items_active {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    font-family: MADE Outer Sans, serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-.nav_items_mobile{
-    display: none;
-}
-.nav_items_active {
-    display: none;
-}
-.mobil{
-    display: none;
+    font-family: Gilroy-Regular;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #0D2573;
 }
 @media all and (max-width: 700px) {
-    .nav_items {
-        display: none;
-    }
-    .Hamburger {
-        z-index: 10;
-        display: inline-block;
-        top: 5vh;
-    }
-    .Hamburger_change {
-        z-index: 101;
-        display: inline-block;
-        color: black;
-        flex: 1;
-        position: fixed;
-        top: 5vh;
-        right: 1rem;
-        cursor: pointer;
-        margin-right: 1rem;
-    }
     .start_now{
         display: none;
-    }
-    .menu{
-        display: none;
-    }
-    .nav {
-        display: flex;
-        Position: fixed;
-        Top: 0;
-        Width: 100%;
-    }
-    .mobil{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: auto;
-        align-items: center;
-        padding: 15px 10px;
-        background-color: #6145A7;
-    }
-    .nav_items_active {
-        position: fixed;
-        left: 0;
-        Top: 0;
-        text-align: center;
-        font-size: 1.3rem;
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-        z-index: 100;
-        height: 100vh;
-        background-image: url(/landing.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: scroll;
-    }
-    .nav_items_active div{
-        padding: 15px 20px;
-        background-color: #6145A7;
-        text-transform: uppercase;
     }
 }

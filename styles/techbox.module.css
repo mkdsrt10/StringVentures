@@ -1,0 +1,27 @@
+.mainbox{
+    background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #EBECF0;
+    background-blend-mode: soft-light, normal;
+    border: 2px solid rgba(255, 255, 255, 0.502431);
+    box-sizing: border-box;
+    box-shadow: inset -10px -10px 20px #FAFBFF, inset 10px 10px 20px #A6ABBD;
+    border-radius: 40px;
+
+    margin: 1rem 1rem;
+    padding: 1rem;
+    width: 20vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+.image{
+
+}
+.mainbox p{
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #0D2573;
+}

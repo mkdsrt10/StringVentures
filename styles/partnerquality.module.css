@@ -1,0 +1,33 @@
+.main{
+    padding-right: 4rem;
+    min-width: 100%;
+}
+.mainbox{
+    background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #EBECF0;
+    background-blend-mode: soft-light, normal;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    box-shadow: inset -5px -5px 10px #FAFBFF, inset 5px 5px 10px #A6ABBD;
+    border-radius: 30px;
+
+    width: 100%;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox h3{
+    font-family: Gilroy-Regular;
+    font-size: 2rem;
+    line-height: 100%;
+    color: #0D2573;
+    margin: 1rem;
+}
+.mainbox h1{
+    font-family: Gilroy-Bold;
+    font-size: 4rem;
+    line-height: 100%;
+    color: #0D2573;
+    margin: 1rem;
+}

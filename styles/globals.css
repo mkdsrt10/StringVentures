@@ -3,24 +3,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans&display=swap');
 
 @font-face {
-  font-family: "MADE Outer Sans";
-  src: url("/made-outer-sans/MADE Outer Sans Thin.otf");
+  font-family: "Gilroy-Bold";
+  src: url("/gilroy-bold.ttf");
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-display: swap;
 }
 @font-face {
-  font-family: "MADE Outer Sans";
-  src: url("/made-outer-sans/MADE Outer Sans Regular.otf");
+  font-family: "Gilroy-Heavy";
+  src: url("/Gilroy-Heavy.ttf");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("/Gilroy-Light.ttf");
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("/Gilroy-Medium.ttf");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
-  font-family: "MADE Outer Sans";
-  src: url("/made-outer-sans/MADE Outer Sans Bold.otf");
+  font-family: "Gilroy-Regular";
+  src: url("/Gilroy-Regular.ttf");
   font-style: normal;
-  font-weight: 900;
+  font-weight: normal;
   font-display: swap;
 }
 html,
