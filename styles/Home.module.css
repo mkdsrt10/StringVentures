@@ -62,6 +62,9 @@
   line-height: 120%;
   color: #0D2573;
 }
+.section span{
+  font-family: Gilroy-Bold;
+}
 .techlist{
   display: flex;
   flex-direction: row;

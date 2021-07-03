@@ -1,0 +1,76 @@
+.main{
+    flex: 1;
+    margin: 1rem 2rem;
+}
+.mainbox{
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), #EBECF0;
+    background-blend-mode: soft-light, normal;
+    border: 4px solid rgba(255, 255, 255, 0.16);
+    box-sizing: border-box;
+    box-shadow: -20px -20px 40px #FAFBFF, 20px 20px 40px #A6ABBD;
+    border-radius: 40px;
+
+    width: 100%;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox h3{
+    font-family: Gilroy-Regular;
+    font-size: 2rem;
+    line-height: 100%;
+    color: #0D2573;
+    margin: 1rem;
+}
+.mainbox h1{
+    font-family: Gilroy-Bold;
+    font-size: 4rem;
+    line-height: 100%;
+    color: #0D2573;
+    margin: 1rem;
+}
+.image{
+    flex: 3;
+    margin: 0 1rem;
+}
+.about{
+    flex: 6;
+    margin: 0 1rem;
+}
+.about h1{
+    font-family: Gilroy-Bold;
+    font-size: 2rem;
+    line-height: 120%;
+
+    color: #0D2573;
+    margin: 1rem 0;
+}
+.about p{
+    font-family: Gilroy-Regular;
+    font-size: 1.5rem;
+    line-height: 120%;
+
+    margin: 1rem 0;
+
+    color: #0D2573;
+}
+.about button{
+    background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), #EBECF0;
+    background-blend-mode: soft-light, normal;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
+    border-radius: 12px;
+
+    padding: 0.8rem 2rem;
+    margin-top: 1rem;
+
+    font-family: Gilroy-Regular;
+    font-size: 1rem;
+    line-height: 100%;
+
+    color: #0D2573;
+    cursor: pointer;
+}

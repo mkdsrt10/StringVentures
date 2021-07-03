@@ -1,14 +1,15 @@
 .container{
     display: flex;
     flex-direction: column;
-    background-color: #180A3B;
     justify-content: space-between;
-    padding: 5vh 5vw;
-    width: 100vw;
+    padding: 5vh 5vw 2vh;
+    width: 100%;
 }
 .row{
+    flex: 1;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     margin: 1vh 0 4vh;
 }
@@ -16,47 +17,27 @@
     flex: 1;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
 }
 .social img{
    margin: 1vh 1vw;
 }
 .logo{
     flex: 1;
-    font-family: Anton, serif;
+    font-family: Gilroy-Bold, serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    line-height: 35px;
-    color: white;
-}
-.menu{
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    font-family: Inter, serif;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: white;
-}
-.menu div{
-    margin: 0 1vw;
-    cursor: pointer;
+    font-size: 1.5rem;
+    color: #0D2573;
 }
 .copy{
-    width: 100%;
+    flex: 1;
     text-align: center;
-    font-family: Inter, serif;
+    font-family: Gilroy-Regular, serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-    color: white;
-    opacity: 0.6;
+    font-size: 0.9rem;
+    color: #0D2573;
 }
 
 @media all and (max-width: 700px) {

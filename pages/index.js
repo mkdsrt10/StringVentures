@@ -4,6 +4,9 @@ import styles from '../styles/Home.module.css'
 import Navbar from "../src/Navbar";
 import TechBox from "../src/techbox";
 import PartnerQuality from "../src/PartnerQuality";
+import TechQ from "../src/TechQ";
+import VCVS from "../src/Studio";
+import Footer from "../src/Footer";
 
 export default function Home({resource}) {
     const [partner, setPartner] = useState(0);
@@ -27,15 +30,17 @@ export default function Home({resource}) {
             <div className={styles.mainContainer}>
                 <Navbar clickhandler={clickhandler}/>
                 <div className={styles.hero}>
-                    <h1>We are early backers of <span>legendary</span> companies</h1>
+                    <h1>we are early backers of <span>legendary</span> companies</h1>
                     <button>Partner with us</button>
                 </div>
                 <div className={styles.section}>
                     <h2>Technologies which will change the future</h2>
                     <div className={styles.techlist}>
-                        <TechBox /><TechBox />
-                        <TechBox /><TechBox />
-                        <TechBox />
+                        <TechBox image={"/ai.png"}/>
+                        <TechBox image={"/3d.png"}/>
+                        <TechBox image={"/ml.png"}/>
+                        <TechBox image={"/blockchain.png"}/>
+                        <TechBox image={"/cc.png"}/>
                     </div>
                 </div>
                 <div className={styles.section}>
@@ -57,8 +62,22 @@ export default function Home({resource}) {
                         <div onClick={() => setPartner(2)} className={styles.indicator} style={{backgroundColor: partner === 2 ? "#0D2573":""}}/>
                     </div>
                 </div>
+                <div className={styles.section}>
+                    <h2>our growing family</h2>
+                    <div className={styles.techlist}>
+                        <TechQ image={"/bdr.png"} head={"Buddy Dr. Rx."} description={"Helping physicians with compliance"}/>
+                        <TechQ image={"/hi.png"} />
+                    </div>
+                </div>
+                <div className={styles.section}>
+                    <h2>the two legs of <span>String Ventures</span></h2>
+                    <div className={styles.techlist}>
+                        <VCVS image={"/vc.png"}/>
+                        <VCVS image={"/vs.png"} head={"Venture Studio"} message={"contact us"} description={"Want to build your company with us?"}/>
+                    </div>
+                </div>
             </div>
-            {/*<Footer />*/}
+            <Footer />
         </div>
     )
 }
