@@ -6,10 +6,10 @@
     box-shadow: inset -10px -10px 20px #FAFBFF, inset 10px 10px 20px #A6ABBD;
     border-radius: 40px;
 
-    margin: 2rem 2rem;
-    padding: 1rem;
-    width: 20vw;
-    height: 20vw;
+    margin: 5rem auto;
+    padding: 2rem;
+    width: 28vw;
+    height: 25vw;
 
     display: flex;
     flex-direction: column;
@@ -21,8 +21,8 @@
 }
 .mainbox p{
     font-family: Gilroy-Medium;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 1.7rem;
+    line-height: 120%;
     text-align: center;
     color: #0D2573;
 

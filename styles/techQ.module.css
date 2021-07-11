@@ -1,6 +1,7 @@
 .main{
     flex: 1;
     margin: 1rem 2rem;
+    height: 100%;
 }
 .mainbox{
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), #EBECF0;
@@ -11,6 +12,8 @@
     border-radius: 40px;
 
     width: 100%;
+    height: 100%;
+    flex: 1;
     padding: 3rem 2rem;
     display: flex;
     flex-direction: row;
@@ -34,6 +37,9 @@
 .image{
     flex: 3;
     margin: 0 1rem;
+}
+.imageMobile{
+    display: none;
 }
 .about{
     flex: 6;
@@ -73,4 +79,61 @@
 
     color: #0D2573;
     cursor: pointer;
+    transition: all 1s ease 0s;
+}
+.about button:hover{
+    background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #EBECF0;
+    background-blend-mode: soft-light, normal;
+    box-sizing: border-box;
+    box-shadow: inset -10px -10px 60px #FAFBFF, inset 10px 10px 60px #A6ABBD;
+}
+
+@media only screen and (max-width: 800px) {
+    .main{
+        margin: 1rem auto;
+        height: 100%;
+    }
+    .mainbox{
+        flex: 1;
+        padding: 3rem 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .mainbox h3{
+        font-size: 2rem;
+        line-height: 100%;
+        margin: 1rem;
+    }
+    .mainbox h1{
+        font-size: 4rem;
+        line-height: 100%;
+        margin: 1rem;
+    }
+    .imageMobile{
+        display: flex;
+        flex: 3;
+        margin: 0 1rem 2rem;
+    }
+    .image{
+        display: none;
+    }
+    .about h1{
+        font-size: 2rem;
+        line-height: 120%;
+        margin: 1rem 0;
+    }
+    .about p{
+        font-size: 1.5rem;
+        line-height: 120%;
+        margin: 1rem 0;
+    }
+    .about button{
+        padding: 0.8rem 2rem;
+        margin-top: 1rem;
+
+        font-size: 1rem;
+        line-height: 100%;
+
+        color: #0D2573;
+    }
 }

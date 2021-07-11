@@ -1,19 +1,21 @@
 .mainbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+    padding: 3rem 5rem;
+    max-width: 45%;
+    min-height: 100%;
+
+    flex: 1;
     background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #EBECF0;
     background-blend-mode: soft-light, normal;
     border: 2px solid rgba(255, 255, 255, 0.502431);
     box-sizing: border-box;
     box-shadow: inset -10px -10px 20px #FAFBFF, inset 10px 10px 20px #A6ABBD;
-    border-radius: 40px;
-
-    margin: 1rem 1rem;
-    padding: 3rem 1rem;
-    width: 40%;
-
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-items: center;
+    border-radius: 50px;
 }
 .image{
 
@@ -50,13 +52,50 @@
     box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
     border-radius: 40px;
 
-    padding: 0.8rem 2rem;
+    padding: 1rem 3rem;
     margin-top: 1rem;
 
     font-family: Gilroy-Regular;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 100%;
 
     color: #0D2573;
     cursor: pointer;
+    transition: all 1s ease 0s;
+}
+.mainbox button:hover{
+    background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #EBECF0;
+    background-blend-mode: soft-light, normal;
+    box-sizing: border-box;
+    box-shadow: inset -10px -10px 60px #FAFBFF, inset 10px 10px 60px #A6ABBD;
+}
+@media only screen and (max-width: 800px) {
+    .mainbox{
+        padding: 3rem 3rem;
+        max-width: 100%;
+        min-height: 100%;
+        margin: 2rem 0 !important;
+        flex: 1;
+        border-radius: 30px;
+    }
+    .image{
+
+    }
+    .mainbox p{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .mainbox h1{
+        font-size: 1.8rem;
+        line-height: 120%;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .mainbox button{
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+
+        font-size: 1.2rem;
+        line-height: 100%;
+    }
 }

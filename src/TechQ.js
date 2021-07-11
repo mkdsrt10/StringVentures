@@ -9,6 +9,9 @@ export default function TechQ({image="/apply.png", head="HealthIntel", descripti
                 <div className={styles.image}>
                     <Image src={image} width={"200px"} height={"200px"}/>
                 </div>
+                <div className={styles.imageMobile}>
+                    <Image src={image} width={"100px"} height={"100px"}/>
+                </div>
                 <div className={styles.about}>
                     <h1>{head}</h1>
                     <p>{description}</p>

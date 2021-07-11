@@ -31,3 +31,26 @@
     color: #0D2573;
     margin: 1rem;
 }
+@media screen and (max-width: 800px) {
+    .main{
+        padding-right: 0;
+        min-width: 100%;
+    }
+    .mainbox{
+        width: 100%;
+        padding: 2rem 2rem;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+    }
+    .mainbox h3{
+        font-size: 1.4rem;
+        margin: 1rem auto;
+    }
+    .mainbox h1{
+        font-size: 2rem;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+}

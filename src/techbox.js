@@ -7,7 +7,7 @@ export default function TechBox({tech="Artificial Intelligence", image="/apply.p
     return (
         <div className={styles.mainbox}>
             <div className={styles.image}>
-                <Image src={image} width={"200px"} height={"200px"}/>
+                <Image src={image} width={"150px"} height={"150px"}/>
             </div>
             <p>{tech}</p>
         </div>

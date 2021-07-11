@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5vh 8vw;
+    padding: 5vh 8vw 3vh;
     background: #ECEDF1;
     width: 100%;
     position: fixed;
@@ -11,6 +11,8 @@
 .logo{
     font-family: Gilroy-Bold, serif;
     font-style: normal;
+    align-self: center;
+    text-align: center;
     font-weight: normal;
     font-size: 1.5rem;
     color: #0D2573;
@@ -20,10 +22,14 @@
     box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #FFFFFF;
     border-radius: 32px;
     padding: 0.8rem 4rem;
+    transition: all 1s ease 0s;
+    cursor: pointer;
 }
 .start_now:hover{
-    background-color:  cornflowerblue;
-    cursor: pointer;
+    background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #EBECF0;
+    background-blend-mode: soft-light, normal;
+    box-shadow: inset -10px -10px 60px #FAFBFF, inset 10px 10px 60px #A6ABBD;
+    border-radius: 40px;
 }
 .text {
     font-family: Gilroy-Regular;

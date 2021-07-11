@@ -39,6 +39,8 @@
 }
 html,
 body {
+  width: 100%;
+  background-color: #ECEDF1;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
