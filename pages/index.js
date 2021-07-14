@@ -28,7 +28,7 @@ export default function Home() {
                 <div className={styles.top_contianer_content}>
                     <div className={styles.top_contianer_content_title}>
                         <div className={styles.hero_heading}>
-                            Make the exceptional come to life.
+                            We build the future with you
                         </div>
                         <div className={styles.hero_subhead}>
                             Early backers of remarkable teams through their astronomical ambitions.
@@ -46,7 +46,7 @@ export default function Home() {
             <Investment />
             <Team />
             <Testimonial />
-            <Resources />
+            {/*<Resources />*/}
             <WorkTogether clickhandler={clickhandler} />
         </div>
 

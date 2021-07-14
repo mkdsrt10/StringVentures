@@ -6,14 +6,14 @@ export default function Footer() {
             <div className={styles.row}>
                 <div className={styles.logo}>String Ventures</div>
                 <div className={styles.social}>
-                    <img src={"/linkedin.svg"}/>
-                    <img src={"/tw.svg"}/>
+                    {/*<img src={"/linkedin.svg"}/>*/}
+                    {/*<img src={"/tw.svg"}/>*/}
                 </div>
                 <div className={styles.menu}>
-                    <div onClick={() => {}}>Team</div>
+                    {/*<div onClick={() => {}}>Team</div>*/}
                     <div>Portfolio</div>
                     <div>About us</div>
-                    <div>Resources</div>
+                    {/*<div>Resources</div>*/}
                 </div>
             </div>
             <div className={styles.copy}>
