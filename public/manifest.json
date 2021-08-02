@@ -1,0 +1,19 @@
+{
+  "name": "BuddyDrRx",
+  "short_name": "BuddyDrRx",
+  "description": "A virtual cabinet to manage all your drug samples and keep you compliant",
+  "lang": "en-GB",
+  "start_url": "/login",
+  "display": "standalone",
+  "theme_color": "#0db1a1",
+  "icons": [
+    {
+      "src": "PWA_LOGO_192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "PWA_LOGO.png",
+      "sizes": "512x512"
+    }
+  ]
+}

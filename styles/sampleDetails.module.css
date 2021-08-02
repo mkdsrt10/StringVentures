@@ -1,0 +1,252 @@
+.main{
+    display: flex;
+    height: min-content;
+    min-height: 100%;
+    width: 100%;
+    background: #F6F7F9;
+    padding: 2vh 2vw;
+}
+.left{
+    flex: 1;
+    height: 100%;
+    margin: 1rem;
+    max-width: 600px;
+}
+.full{
+    flex: 1;
+    height: 100%;
+    margin: 1rem;
+    max-width: 600px;
+}
+.back{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0;
+    cursor: pointer;
+    width: 100px;
+}
+.back p{
+    margin-left: 0.5rem;
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #8E8E8E;
+}
+.headBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.editButton{
+    display: flex;
+    flex-direction: row;
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    text-align: right;
+    color: #0DB1A1;
+    cursor: pointer;
+}
+.span0{
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #3F4544;
+    display: flex;
+    flex-direction: column;
+}
+.semiBorderBottom{
+    width: 60px;
+    margin-top: 5px;
+    border-bottom: 4px solid #0DB1A1;
+}
+.sampleBox{
+    display: flex;
+    padding: 1rem 3vw;
+    margin: 1.5rem 0;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+}
+.sampleHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5rem 0 0;
+}
+.sampleHead p{
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 30px;
+    color: #3F4544;
+    margin-left: 1rem;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1rem 0;
+}
+.detailItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-width: 40%;
+    margin: 1.2rem 1rem 1.2rem 0;
+}
+.detailItem label{
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9rem;
+    display: flex;
+    line-height: 18px;
+    align-items: center;
+
+    color: #8E8E8E;
+}
+.detailItem p{
+    margin-top: 0.6rem;
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+
+    color: #3F4544;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+.button_up{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    border-radius: 6px;
+    padding: 0.5rem;
+
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 27px;
+    text-align: center;
+    color: #0DB1A1;
+
+    cursor: pointer;
+    border: 1.5px solid #0DB1A1;
+    box-sizing: border-box;
+}
+.button_up:disabled{
+    color: lightgrey;
+
+    cursor: not-allowed;
+    border: 1.5px solid lightgrey;
+}
+.button_empty{
+    margin: 0 0 0 1rem;
+    border: none;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #0DB1A1;
+    border-radius: 6px;
+    padding: 0.5rem;
+
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+.bodyP{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.feedback{
+    background: #ECFEFC;
+    border: 0.5px solid #0DB1A1;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 1.3rem;
+    margin-top: 1rem;
+}
+.feedback p{
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #0DB1A1;
+    margin-top: 0;
+}
+.SS{
+    flex: 1;
+    margin-right: 1rem;
+}
+.SL{
+    flex: 1;
+    margin-left: 1rem;
+}
+@media only screen and (max-width: 800px) {
+    .main{
+        padding: 0 2vw;
+        flex-direction: column;
+    }
+    .left{
+        margin: 0.5rem;
+    }
+    .sampleBox{
+        padding: 1rem 1.5rem;
+        flex-direction: column;
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+    }
+    .details{
+        margin: 0.5rem 0;
+    }
+    .detailItem{
+        /*width: 40%;*/
+    }
+    .bodyP{
+        flex-direction: column;
+    }
+    .SS{
+        margin-right: 0;
+    }
+    .SL{
+        margin-left: 0;
+    }
+}
