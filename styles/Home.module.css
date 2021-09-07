@@ -38,6 +38,8 @@
   font-weight: bold;
   font-size: 4rem;
   line-height: 4.2rem;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
   letter-spacing: -0.02em;
   color: #FFFFFF;
 }
@@ -61,15 +63,6 @@
   border-bottom: 2px solid white;
   font-weight: 600;
   line-height: 1.7rem;
-}
-
-.hero_subhead{
-  font-family: Inter, serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1rem;
-  line-height: 204%;
-  color: #FFFFFF;
 }
 .contact_mobile{
   display: none;
